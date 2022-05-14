@@ -151,6 +151,7 @@ body {
   
   #pricing {
     padding: 100px;
+    
   }
   
   .price-text {
@@ -161,6 +162,10 @@ body {
   .pricing-column {
     padding: 3% 2%;
   }
+
+  .card {
+    margin-left: 450px;
+ }
   
   
   /* CTA Section */
@@ -184,6 +189,7 @@ body {
       transform: rotate(0);
     }
   }
+
 
 
 

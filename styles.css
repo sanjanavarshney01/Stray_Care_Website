@@ -34,7 +34,7 @@ body {
   /* Sections */
   
   .colored-section {
-    background-color: #22b2ea;
+    background-color: #39c7dd;
     /* background-color: #ff4c68; */
     color: #fff;
   }
@@ -112,7 +112,8 @@ body {
   }
   
   .icon:hover {
-    color: #22b2ea;
+    color: #39c7dd;
+    /* color: #22b2ea; */
     /* color: #ff4c68; */
   }
   

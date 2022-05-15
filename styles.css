@@ -161,11 +161,8 @@ body {
   
   .pricing-column {
     padding: 3% 2%;
+    margin: 0 auto;
   }
-
-  .card {
-    margin-left: 450px;
- }
   
   
   /* CTA Section */
@@ -189,6 +186,8 @@ body {
       transform: rotate(0);
     }
   }
+
+  
 
 
 

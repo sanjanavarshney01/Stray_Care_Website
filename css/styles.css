@@ -164,7 +164,7 @@ nav .navbar-nav li a:hover {
   
 #pricing {
   padding: 100px;
-  background-color: rgb(247, 242, 242);
+  background-color: #fff;
 }
   
 .price-text {
@@ -178,11 +178,11 @@ nav .navbar-nav li a:hover {
 }
 
 .card-header {
-  background-color: #39c7dd;
+  background-color: #ebecf1;
 }
 
 .card-body {
-  background-color: #a0e9f4;
+  background-color: #fff;
 }
   
   

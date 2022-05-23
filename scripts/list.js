@@ -1,3 +1,4 @@
+
 var li_links = document.querySelectorAll(".links ul li");
 var view_wraps = document.querySelectorAll(".view_wrap");
 var list_view = document.querySelector(".list-view");

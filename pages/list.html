@@ -127,8 +127,94 @@
 		</div>
 	</div>
 </div>
+<table>
+  <thead>
+      <th>Sno.</th>
+      <th>Type</th>
+      <th>Gender</th>
+      <th>City</th>
+      <th>Address</th>
+  </thead>
+  <tbody id="tbody1"></tbody>
+</table>
 	
-<script src="../scripts/list.js"></script>
+<!-- <script src="../scripts/list.js"></script> -->
+
+
+<script type="module">
+  var SNo=0;
+  var tbody=document.getElementbyId('tbody1');
+
+  function additemToTable(type,gender,city,address){
+      let trow=document.createElement("trow");
+      let td1=document.createElement('td');
+      let td2=document.createElement('td');
+      let td3=document.createElement('td');
+      let td4=document.createElement('td');
+      // let td5=document.createElement('td');
+
+      td1.innerHTML=++SNo;
+      td2.innerHTML=++SNo;
+      td3.innerHTML=++SNo;
+      td4.innerHTML=++SNo;
+      // td5.innerHTML=++SNo;
+      trow.appendChild(td1);
+      trow.appendChild(td2);
+      trow.appendChild(td3);
+      trow.appendChild(td4);
+
+      tbody.appendChild(trow);
+  }
+
+  function addAllItemsToTable(DetailModel){
+    SNo=0;
+    tbody.innerHTML="";
+    DetailModel.array.forEach(element => {
+      additemToTable(element.type,element.gender,element.city,element.address);
+    });
+
+  }
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyChXI_HnaA1zmHz5tcpkPGRsBDPiEmhNBc",
+    authDomain: "stray-care-app.firebaseapp.com",
+    databaseURL: "https://stray-care-app-default-rtdb.firebaseio.com",
+    projectId: "stray-care-app",
+    storageBucket: "stray-care-app.appspot.com",
+    messagingSenderId: "385825308948",
+    appId: "1:385825308948:web:1b4da03eee3e8ea5808201",
+    measurementId: "G-9BECJPFFZZ"
+  };
+  const app = initializeApp(firebaseConfig);
+
+  import{
+    getFirestore,doc,getDoc,getDocs,onSnapshot,collection
+  }from "https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore.js"
+
+  // Initialize Firebase
+ 
+  const analytics = getAnalytics(app);
+  const db=getFirestore();
+
+  async function getAllDataOnce(){
+    const querySnapshot=await getDocs(collection(db,"Requests"));
+    var req=[];
+
+    querySnapshot.forEach(doc=>{
+        req.push(doc.data());
+    });
+    addAllItemsToTable(req);
+  }
+  window.onload=getAllDataOnce;
+
+</script>
 
 </body>
 </html>

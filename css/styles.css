@@ -194,6 +194,10 @@ nav .navbar-nav li a:hover {
   
 .social-icon {
   margin: 20px 10px;
+  color: black;
+}
+.social-icon:hover {
+  color: blue;
 }
   
 @media (max-width: 1028px) {

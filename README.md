@@ -1,3 +1,3 @@
 # Stray_Care_Website
-Our official Android App
+Source code for our official Android App
 https://github.com/kuldeep506/Stray_Care_App/tree/master

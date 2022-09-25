@@ -10,6 +10,6 @@ function showMessage() {
     alert("This version of application will be available soon.");
 }
 document.getElementById("py").onclick = function() {
-    location.href = "/pages/pay.html";
+    location.href = "./pages/pay.html";
 }
 

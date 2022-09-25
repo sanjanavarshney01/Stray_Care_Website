@@ -1,7 +1,12 @@
 .card {
     height: 100px;
-    width: 100px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
     /* background-color: rgb(213, 209, 209); */
+}
+.card-body{
+    margin-right: auto;
 }
 h2 {
     text-align: center;
@@ -10,8 +15,6 @@ h2 {
 img {
     height: 250px;
     width: 250px;
-    margin-left: 510%;
-
 }
 .payment-section {
     margin-top: 100px;

@@ -1,22 +1,18 @@
 .card {
     height: 100px;
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100px;
     /* background-color: rgb(213, 209, 209); */
-}
-.card-body{
-    margin-right: auto;
-    margin-left: auto;
 }
 h2 {
     text-align: center;
     line-height: 100px;
 }
 img {
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
+    margin-left: 650px;
+
 }
 .payment-section {
-    margin-top: 100px;
+    margin-top: 200px;
 }

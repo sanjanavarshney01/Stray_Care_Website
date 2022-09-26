@@ -1,7 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .card {
-    height: 100px;
-    width: 100px;
+    position: relative;
+    height: 400px;
     /* background-color: rgb(213, 209, 209); */
+}
+.card-body {
+    margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 h2 {
     text-align: center;
